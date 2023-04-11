@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root{
+      --bg: #424242;
+      --link-container-bg: #505050;
+      --link-container-header-bg: #656565;
+      --link-color: white;
+    }
+    html {
+      height: 100%;
+    }
+    
+    body {
+      background: var(--bg);
+      font-family: ubuntu, light;
+      height: 100%;
+    }
+    
+    a{
+      text-decoration: none;
+    }
+    
+    a:visited{
+      color: var(--link-color);
+    }
+    
+    hr {
+      height:2px;
+      border-width:0;
+      color: var(--link-color);
+      background-color: var(--link-color);
+    }
+    
+    .main-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+    
+    .main-container-column{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .category-container {
+      background: #E95420;
+      border-radius: 10px 10px 50px 50px;
+      margin: 0px 10px 10px 10px;
+      min-width: 200px;
+    
+    }
+    
+    .links-container-header {
+      font-weight: bold;
+      color: var(--link-color);
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background: #E95420;
+      border-radius: 10px 10px 0px 0px;
+      height: 35px;
+      font-size: 20px;
+    
+    }
+    
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0px 0px 10px 10px;
+      background: var(--link-container-bg);
+    }
+    
+    .link-container {
+      display: flex; 
+      transition: background 0.3s;
+      border-radius: 5px;
+    }
+    
+    .link-container:hover {
+      background: var(--link-container-header-bg); 
+    }
+    
+    .link-with-favicon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      padding-left: 10px;
+      
+    }
+    
+    .link-favicon {
+      
+    }
+    
+    .link-favicon > img {
+      max-height: 30px;
+    }
+    
+    .link-clickable{
+      width: 100%;
+    }
+    
+    .link-clickable > a{
+      display: block;
+      height: 100%;
+      width: 100%;
+      padding-right: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="main-container">
+    <div class="main-container-column">
+      <div class="category-container">
+        <div class="links-container-header">
+          <div class="links-container-header-title">
+            Entertainment
+          </div>
+        </div>
+        <div class="links-container">
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/reddit.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://www.reddit.com" "="">reddit</a>
+              </div>
+            </div>
+          </div>
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/reddit.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://www.reddit.com/r/livestreamfail">lsf</a>
+              </div>
+            </div>
+          </div>
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/youtube.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://www.youtube.com/feed/subscriptions">youtube</a>
+              </div>
+            </div>
+          </div>
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/youtube.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://www.youtube.com/playlist?list=WL">watch later</a>
+              </div>
+            </div>
+          </div>
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/twitch.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://www.twitch.tv/directory/all">twitch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+   </div><div class="main-container-column">
+      <div class="main-container-column">
+      <div class="category-container">
+        <div class="links-container-header">
+          <div class="links-container-header-title">
+            School
+          </div>
+        </div>
+        <div class="links-container">
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/teams.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://teams.microsoft.com">teams</a>
+              </div>
+            </div>
+          </div>
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/portal.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://portal.office.com">office portal</a>
+              </div>
+            </div>
+          </div>
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/school.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://www.insis.vse.cz">insis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+   </div>
+      
+      
+   </div><div class="main-container-column">
+      <div class="category-container">
+        <div class="links-container-header">
+          <div class="links-container-header-title">
+            Work
+          </div>
+        </div>
+        <div class="links-container">
+          <div class="link-container">
+            <div class="link-with-favicon">
+              <div class="link-favicon">
+                <img src="img/reddit.png">
+              </div>
+              <div class="link-clickable">
+                <a href="https://www.reddit.com" "="">reddit</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+        </div>
+      </div>
+      
+      
+   </div>
+   
+   
+ 
+    
+  </div>
+
+</body>
+</html>
